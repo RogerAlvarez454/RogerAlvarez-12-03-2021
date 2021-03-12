@@ -10,6 +10,7 @@ export class PotenciaRlamComponent implements OnInit {
   @Input() exponente_numero: number = 0;
 
   potencia: number = 0;
+  acumulador_resultados = 0;
   constructor() {}
 
   ngOnInit(): void {}
@@ -19,6 +20,7 @@ export class PotenciaRlamComponent implements OnInit {
       Number(this.base_numero),
       Number(this.exponente_numero)
     );
+    this.acumulador_resultados += this.potencia;
   }
 
   multiplicar_RLAM(r: number, b: number) {

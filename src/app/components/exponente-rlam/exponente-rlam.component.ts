@@ -10,11 +10,5 @@ export class ExponenteRlamComponent implements OnInit {
   exponente: number = 0;
   constructor() {}
 
-  ngOnInit(): void {
-    console.log(this.base_numero);
-  }
-
-  verValor() {
-    console.log(this.base_numero);
-  }
+  ngOnInit(): void {}
 }
