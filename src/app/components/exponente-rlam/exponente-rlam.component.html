@@ -1,1 +1,6 @@
-<p>exponente-rlam works!</p>
+<input type="text" [(ngModel)]="exponente" />
+
+<app-potencia-rlam
+  [base_numero]="this.base_numero"
+  [exponente_numero]="exponente"
+></app-potencia-rlam>
